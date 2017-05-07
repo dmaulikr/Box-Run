@@ -1,6 +1,3 @@
-//var cam1 : Camera;
-//var cam2 : Camera;
-//var cam3 : Camera;
 var bc : BoxCollider;
 var light1 : Light;
 var light2 : Light;
@@ -39,7 +36,7 @@ function OnTriggerEnter(collision : Collider) {
 			bc.size = Vector3(15,1,1); //Make Player take up entire width of floor
 		}
 		
-    //Adjust in game settings
+    		//Adjust in game settings
 		PlayerBoxCollision.moveSpeedStatic /= 1.5;
 		spawnRateMultiplier = 2;
 		for(var timeCounterC = 10.0; timeCounterC > 0; timeCounterC -= 0.1){
@@ -47,7 +44,7 @@ function OnTriggerEnter(collision : Collider) {
 			yield WaitForSeconds(0.1);
 		}
 		
-    //Camera Switch done 
+    		//Camera Switch done 
 		cameraText.text = "";
 		bc.size = Vector3(1,1,1);
 		
